@@ -1,7 +1,7 @@
 {
-  "name": "tech-blog",
+  "name": "green-room",
   "version": "1.0.0",
-  "description": "This is a CMV style tech blog app",
+  "description": "This is a hobby builder app",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,5 +28,9 @@
   "bugs": {
     "url": "https://github.com/mwjones2186/tech-blog/issues"
   },
-  "homepage": "https://github.com/mwjones2186/tech-blog#readme"
+  "homepage": "https://github.com/mwjones2186/tech-blog#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
+  }
 }
