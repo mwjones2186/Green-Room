@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+# .json Packages
+package-lock.json
+.prettierrc.json
+.prettierignore
