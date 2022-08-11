@@ -7,9 +7,9 @@ router.get('/', (req, res) =>{
     Post.findAll({
         attributes:[
             'id',
-            'post_url',
             'title',
-            'created_at'
+            'body',
+            'user_id'
         ],
         include:[
            //connect to future Comment Model
@@ -27,25 +27,19 @@ router.get('/', (req, res) =>{
 });
 
 router.get('/:id', (req,res) =>{
+    console.log(req.params.id);
     Post.findOne({
         where:{
-            id:req.params.id
+            id:req.params.id,
         },
         attributes:[
             'id',
-            'post_url',
             'title',
-            'created_at'
+            'body',
+            'user_id'
         ],
         include:[
-            {
-                model:Comment,
-                attributes:['id','comment_text','post_id','user_id','created_at'],
-                include:{
-                    model:User,
-                    attributes:['username']
-                }  
-            },
+            //connect to future Comment Model
             {
                 model:User,
                 attributes:['username']
@@ -53,7 +47,7 @@ router.get('/:id', (req,res) =>{
         ]
     })
     .then(dbPostData =>{
-        if(dbPostData){
+        if(!dbPostData){
             res.status(400).json({message:'No post found with this id!'});
             return;
         }
@@ -68,7 +62,7 @@ router.get('/:id', (req,res) =>{
 router.post('/', (req,res) =>{
     Post.create({
         title:req.body.title,
-        post_url:req.body.post_url,
+        body:req.body.body,
         user_id:req.session.user_id
     })
     .then(dbPostData =>res.json(dbPostData))
