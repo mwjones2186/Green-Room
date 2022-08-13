@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const {Category} = require('../models');
 
 //display home page
 router.get('/', async (req, res) => {
@@ -30,5 +31,13 @@ router.get('/dashboard/create', async (req, res) => {
   });
 });
 
+router.get('/forum/categories', (req,res) =>{
+  Category.findAll()
+    .then(dbCommentData => res.json(dbCommentData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+})
 
 module.exports = router;
