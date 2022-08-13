@@ -24,7 +24,20 @@ router.get('/dashboard', async (req, res) => {
   });
 });
 
-router.get('/dashboard/create', async (req, res) => {
+// router.get('/dashboard/create', async (req, res) => {
+//   res.render('create', {
+//     loggedIn: req.session.loggedIn,
+//   });
+// });
+
+router.get('/messageboard', async (req, res) => {
+  res.render('messageboard', {
+    loggedIn: req.session.loggedIn,
+    user_id: req.session.user_id,
+  });
+});
+
+router.get('/messageboard/create', async (req, res) => {
   res.render('create', {
     loggedIn: req.session.loggedIn,
   });

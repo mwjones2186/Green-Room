@@ -1,8 +1,9 @@
-<a href="/dashboard/create"><button>Add New Post</button></a>
 
 <a href="/dashboard/edit"><button>Edit a Post</button></a>
 
-<div class="userPost-card">
+
+
+{{!-- <div class="userPost-card">
     <h2 class="Post-title" value="{{title}}">Here are your current posts</h2>
     <form class="form edit-form">
         <input class="form-input" type="hidden" id="post-id" value='{{post_id}}'/>
@@ -16,14 +17,15 @@
       </div>
      
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">Update Your Post</button>
-        <button class="btn btn-primary" type="button">Delete Your Post</button>
+       
       </div>
     </form>
-  </div>
+  </div> --}}
 
-  <button id: "category-page">Take me to the Threads!</button>
+    <button class="btn btn-primary" type="submit">Update Your Post</button>
+    <button class="btn btn-primary" type="button">Delete Your Post</button>
+    <button id: "category-page">Take me to the Threads!</button>
 
-  <ul id="populate"></ul>
+  <ul id="populated"></ul>
 
   <script src="/js/dashboard.js"></script>

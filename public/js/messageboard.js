@@ -1,8 +1,8 @@
-async function populatePost (){
-    fetch ('/api/posts/user')
+function populatePost (){
+    fetch ('/api/posts/users')
 	.then(response => response.json())
 	.then(data => {
-        data.forEach(post => {
+        data.value(post => {
             const populate = document.getElementById('populated');
             const postDiv = document.createElement('li');
             const postContainer = document.createElement('div');

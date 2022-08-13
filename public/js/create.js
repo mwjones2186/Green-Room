@@ -12,7 +12,8 @@ const newPostFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/dashboard');
+        document.location.replace('/messageboard');
+        
       } else {
         alert('Failed to log in.');
       }
@@ -22,4 +23,6 @@ const newPostFormHandler = async (event) => {
   document
     .querySelector('.create-post-form')
     .addEventListener('submit', newPostFormHandler);
+
+  
   
