@@ -1,6 +1,8 @@
 const seedCategories = require('./category-seeds');
 const seedHobbies = require('./hobby-seeds');
 const sequelize = require('../config/connection');
+const seedTags = require('./tag-seeds');
+
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
@@ -11,6 +13,9 @@ const seedAll = async () => {
 
   await seedHobbies();
   console.log('\n----- HOBBIES SEEDED -----\n');
+
+  await seedTags();
+  console.log('\n----- Tags SEEDED -----\n');
 
   process.exit(0);
 };

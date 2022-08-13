@@ -19,7 +19,7 @@ const userdata = [
   },
   {
     username: 'jereamy',
-    email: 'ihellier3@goo.ne.jp',
+    email: 'test@gmail.com',
     password: 'password123',
   },
 ];
