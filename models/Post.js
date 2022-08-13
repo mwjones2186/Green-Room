@@ -27,6 +27,13 @@ Post.init(
         model: 'user',
         key: 'id',
       },
+    // category_id: {
+    //   allowNull: true,
+    //   references: {
+    //     model: 'category',
+    //     key: 'id'
+    //   },
+    // } 
     },
   },
   {

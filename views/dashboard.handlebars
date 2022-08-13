@@ -1,3 +1,27 @@
 <a href="/dashboard/create"><button>Add New Post</button></a>
 
 <a href="/dashboard/edit"><button>Edit a Post</button></a>
+
+<div class="userPost-card">
+    <h2 class="Post-title" value="{{title}}">Here are your current posts</h2>
+    <form class="form edit-form">
+        <input class="form-input" type="hidden" id="post-id" value='{{post_id}}'/>
+      <div class="form-group">
+        <label for="edit-post">Title:</label>
+        <input class="form-input" type="text" id="outdoors" value='{{title}}'/>
+      </div>
+      <div class="form-group">
+        <label for="edit-post">Content:</label>
+        <textarea class="form-input" type="text" id="body" value= '{{content}}'></textarea>
+      </div>
+     
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Update Your Post</button>
+        <button class="btn btn-primary" type="button">Delete Your Post</button>
+      </div>
+    </form>
+  </div>
+
+  <ul id="populate"></ul>
+
+  <script src="/js/dashboard.js"></script>

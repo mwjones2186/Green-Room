@@ -20,6 +20,7 @@ router.get('/login', (req, res) => {
 router.get('/dashboard', async (req, res) => {
   res.render('dashboard', {
     loggedIn: req.session.loggedIn,
+    user_id: req.session.user_id,
   });
 });
 
