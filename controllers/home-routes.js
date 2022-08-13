@@ -31,9 +31,20 @@ router.get('/dashboard/create', async (req, res) => {
   });
 });
 
-router.get('/forum/categories', (req,res) =>{
-  Category.findAll()
-    .then(dbCommentData => res.json(dbCommentData))
+router.get('/categories', (req,res) =>{
+  Category.findAll({raw: true})
+    .then(dbCategoryData => {
+      if(!dbCategoryData){
+        res.status(400).json({message:'strike a conversation!'});
+        return
+      }
+      const category = dbCategoryData;//dbCategoryData.get({plain:true});
+
+      res.render('category', {
+        category,
+        loggedIn:req.session.loggedIn
+      })
+    })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
