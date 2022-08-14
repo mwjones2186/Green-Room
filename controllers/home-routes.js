@@ -31,6 +31,7 @@ router.get('/dashboard/create', async (req, res) => {
   });
 });
 
+<<<<<<< HEAD
 router.get('/messageboard', async (req, res) => {
   res.render('messageboard', {
     loggedIn: req.session.loggedIn,
@@ -45,6 +46,9 @@ router.get('/messageboard/create', async (req, res) => {
 });
 
 router.get('/categories', (req,res) =>{
+=======
+router.get('/threads', (req,res) =>{
+>>>>>>> bfed206a9706fa36522d88d62caa5c08bad53ea0
   Category.findAll({raw: true})
     .then(dbCategoryData => {
       if(!dbCategoryData){
