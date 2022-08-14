@@ -2,7 +2,7 @@ function populatePost (){
     fetch ('/api/posts/users')
 	.then(response => response.json())
 	.then(data => {
-        data.value(post => {
+        data.forEach(post => {
             const populate = document.getElementById('populated');
             const postDiv = document.createElement('li');
             const postContainer = document.createElement('div');

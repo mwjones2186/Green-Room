@@ -25,11 +25,11 @@ router.get('/dashboard', async (req, res) => {
   });
 });
 
-// router.get('/dashboard/create', async (req, res) => {
-//   res.render('create', {
-//     loggedIn: req.session.loggedIn,
-//   });
-// });
+router.get('/dashboard/create', async (req, res) => {
+  res.render('create', {
+    loggedIn: req.session.loggedIn,
+  });
+});
 
 router.get('/messageboard', async (req, res) => {
   res.render('messageboard', {
