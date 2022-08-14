@@ -2,31 +2,40 @@
     box-sizing: border-box;
   }
   
+  h2 {
+    color: #2c2441;
+  }
+  
   body,
   html {
     height: 100%;
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(110, 3, 3);
+    color: #2c2441;
+    background-color: #7e0101;
+    text-shadow: 1px #B3DEC1;
   }
   
-  a {
+  a,
+  linked {
     text-decoration: none;
-    color: #2b0235;
+    color: #2c2441;
     font-weight: bold;
     transition: color 0.1s;
+    border: 5px;
+    padding: 1%;
   }
   
   a:hover {
-    color: #032b5c;
+    color: #C2847A;
   }
   
   button {
-    background-color: #2b0235;
+    background-color: #4d3e70;
     border: 0;
     padding: 1%;
-    color: white;
+    color: #2c2441;
     font-weight: bold;
     transition: background-color 0.1s;
     cursor: pointer;
@@ -34,25 +43,21 @@
   }
   
   button:hover {
-    background-color: #2b0235;
-  }
-  
-  .post-list {
-    margin: 0;
-    padding: 0;
+    background-color: #C2847A;
   }
   
   textarea,
   input {
     padding: 1%;
     border-radius: 5px;
-    border: 2px solid #ccc;
+    border: 2px solid #C2847A;
+    background-color: #91b49d;
   }
   
   textarea:focus,
   input:focus {
     outline: none;
-    border: 2px solid #2b0235;
+    border: 2px solid #91b49d;
   }
   
   textarea {
@@ -77,8 +82,12 @@
     flex-direction: column;
   }
   
+  .form-control {
+    background-color: #91b49d;
+  }
+
   header {
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #B3DEC1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,24 +103,6 @@
     padding: 2% 4%;
   }
   
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    color: #2b0235;
-    font-size: 100%;
-    font-weight: bold;
-    transition: color 0.1s;
-    margin-left: 16px;
-  }
-  
-  .btn-no-style:hover {
-    background: none;
-    color: #2b0235;
-  }
-  
   .delete-post-btn {
     background-color: #d41414;
   }
@@ -120,7 +111,7 @@
     background-color: #ff643d;
   }
   
-  .post {
+  label .post {
     margin-bottom: 2%;
     line-height: 150%;
   }
@@ -136,44 +127,8 @@
     margin: -1.5% 0 2% 0;
   }
   
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color 0.1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
-  .comment-form {
-    margin-bottom: 5%;
-  }
-  
-  .comment {
-    padding: 1%;
-    margin-bottom: 1%;
-  }
-  
-  .comment:nth-child(odd) {
-    background-color: #e07101;
-  }
-  
-  .comment .meta {
-    font-size: 90%;
-    margin-bottom: 1%;
-    opacity: 0.6;
-  }
-  
-  .new-post-form input {
-    width: 300px;
-  }
-  
-  .edit-post-form {
-    margin-bottom: 5%;
-  }
-  
   footer {
-    border-top: 2px solid #ccc;
+    border-top: 2px solid #B3DEC1;
     display: flex;
     justify-content: center;
     padding: 1%;

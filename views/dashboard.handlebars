@@ -3,8 +3,8 @@
 <a href="/dashboard/edit"><button class="btn btn-dark">Edit a Post</button></a>
 
 <div class="userPost-card">
-    <h2 class="" value="{{title}}">Here are your current posts</h2>
-    <form class="">
+    <h2 value="{{title}}">Here are your current posts</h2>
+    <form class="post">
       <input class="form-control" type="hidden" id="post-id" value='{{post_id}}'/>
 
       <div class="form-group">
@@ -14,7 +14,7 @@
 
       <div class="form-group">
         <label for="edit-post">Content:</label>
-        <textarea class="" type="text" id="body" value= '{{content}}'></textarea>
+        <textarea class="post" type="text" id="body" value= '{{content}}'></textarea>
       </div>
      
       <div class="form-group">
@@ -24,7 +24,7 @@
     </form>
   </div>
 
-  <a href="/threads">Take me to the Threads!</a>
+  <a href="/threads" class="btn" >Take me to the Threads!</a>
 
   <ul id="populate"></ul>
 
