@@ -31,7 +31,7 @@ router.get('/dashboard/create', async (req, res) => {
   });
 });
 
-router.get('/categories', (req,res) =>{
+router.get('/threads', (req,res) =>{
   Category.findAll({raw: true})
     .then(dbCategoryData => {
       if(!dbCategoryData){
