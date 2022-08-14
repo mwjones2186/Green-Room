@@ -7,7 +7,14 @@ router.get('/', (req, res) => {
   Post.findAll({
     attributes: ['id', 'title', 'body', 'user_id'],
     include: [
-      //connect to future Comment Model
+      {
+        model:Comment,
+        attributes:['id', 'comment_text', 'post_id', 'user_id'],
+        include:{
+          model:User,
+          attributes:['username']
+        }
+      },
       {
         model: User,
         attributes: ['username'],
@@ -21,6 +28,29 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/user', (req, res)=>{
+  console.log(req.session.user_id)
+  Post.findAll({
+    where: {
+      user_id: req.session.user_id
+    },
+    attributes: ['id', 'title', 'body', 'user_id'],
+    include: [
+      //connect to future Comment Model
+      {
+        model: User,
+        attributes: ['username'],
+      },
+    ],
+  })
+    .then((dbPostData) => {res.json(dbPostData)
+    console.log(dbPostData)})
+    // .catch((err) => {
+    //   console.log(err);
+    //   res.status(500).json(err);
+    // });
+    });
+
 router.get('/:id', (req, res) => {
   console.log(req.params.id);
   Post.findOne({
@@ -29,7 +59,14 @@ router.get('/:id', (req, res) => {
     },
     attributes: ['id', 'title', 'body', 'user_id'],
     include: [
-      //connect to future Comment Model
+      {
+        model:Comment,
+        attributes:['id', 'comment_text', 'post_id', 'user_id'],
+        include:{
+          model:User,
+          attributes:['username']
+        }
+      },
       {
         model: User,
         attributes: ['username'],
