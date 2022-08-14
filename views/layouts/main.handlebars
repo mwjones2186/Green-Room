@@ -12,15 +12,15 @@
   <body>
     <header>
       <h1>Hobbista</h1>
-      <h3 class="title">We'll pour in your interests, stir in some hobbies and finish it with
-        some new leads!</h3>
+      <h3 class="title">We'll pour in your interests, stir in some hobbies and finish it with some new leads!</h3>
     </header>
     <nav>
       <a href='/'>Home</a>
       <!-- If the user is logged in, show a logout button -->
       {{#if loggedIn}}
       <a href="/dashboard">Dashboard</a>
-        <button id='logout' class='btn text-end'>Logout</button>
+        <button id='logout' class='btn float-right'>Logout</button>
+        <button id="category-page" class="btn">Threads</button>
       {{else}}
         <!-- Otherwise, show a link to login -->
         <a href='/login'>Login</a>
@@ -39,7 +39,7 @@
       <script src='/js/logout.js'></script>
     {{/if}}
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 
 </html>

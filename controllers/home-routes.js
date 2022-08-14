@@ -31,6 +31,13 @@ router.get('/dashboard/create', async (req, res) => {
   });
 });
 
+router.get('/messageboard', async (req, res) => {
+  res.render('messageboard', {
+    loggedIn: req.session.loggedIn,
+    user_id: req.session.user_id,
+  });
+});
+
 router.get('/threads', (req,res) =>{
   Category.findAll({raw: true})
     .then(dbCategoryData => {
