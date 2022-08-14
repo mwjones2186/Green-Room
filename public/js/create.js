@@ -1,14 +1,13 @@
-const editFormHandler = async (event) => {
+const newPostFormHandler = async (event) => {
     event.preventDefault();
   
-    const postId = document.querySelector('#post-id').value.trim();
     const title = document.querySelector('#title').value.trim();
     const body = document.querySelector('#body').value.trim();
   
    
       const response = await fetch('/api/posts', {
-        method: 'GET',
-        body: JSON.stringify({ post_id, title, body }),
+        method: 'POST',
+        body: JSON.stringify({ title, body }),
         headers: { 'Content-Type': 'application/json' },
       });
   
@@ -21,5 +20,6 @@ const editFormHandler = async (event) => {
   };
   
   document
-    .querySelector('.edit-post-form')
-    .addEventListener('submit', editFormHandler);
+    .querySelector('.create-post-form')
+    .addEventListener('submit', newPostFormHandler);
+  
