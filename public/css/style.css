@@ -5,7 +5,7 @@
   h2 {
     color: #2c2441;
   }
-  
+
   body,
   html {
     height: 100%;
@@ -20,7 +20,7 @@
   a,
   linked {
     text-decoration: none;
-    color: #2c2441;
+    color: #B3DEC1;
     font-weight: bold;
     transition: color 0.1s;
     border: 5px;
@@ -33,19 +33,22 @@
   
   button {
     background-color: #4d3e70;
-    border: 0;
-    padding: 1%;
-    color: #2c2441;
+    border: 1%;
+    padding: 0;
+    color: #B3DEC1;
     font-weight: bold;
     transition: background-color 0.1s;
     cursor: pointer;
-    border-radius: 5px;
   }
   
   button:hover {
     background-color: #C2847A;
   }
   
+  .btn {
+    text-emphasis-color: #B3DEC1;
+  }
+
   textarea,
   input {
     padding: 1%;
