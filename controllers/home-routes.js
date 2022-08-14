@@ -25,7 +25,7 @@ router.get('/dashboard', async (req, res) => {
   });
 });
 
-router.get('/dashboard/create', async (req, res) => {
+router.get('/messageboard/create', async (req, res) => {
   res.render('create', {
     loggedIn: req.session.loggedIn,
   });

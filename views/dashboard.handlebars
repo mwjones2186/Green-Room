@@ -1,8 +1,5 @@
-<a href="/dashboard/create"><button class="btn btn-dark">Add New Post</button></a>
 
-<a href="/dashboard/edit"><button class="btn btn-dark">Edit a Post</button></a>
-
-<div class="userPost-card">
+{{!-- <div class="userPost-card">
     <h2 class="" value="{{title}}">Here are your current posts</h2>
     <form class="">
       <input class="form-control" type="hidden" id="post-id" value='{{post_id}}'/>
@@ -16,13 +13,15 @@
         <label for="edit-post">Content:</label>
         <textarea class="" type="text" id="body" value= '{{content}}'></textarea>
       </div>
-     
-      <div class="form-group">
-        <button class="btn btn-dark" type="submit">Update Your Post</button>
-        <button class="btn btn-dark" type="button">Delete Your Post</button>
-      </div>
+    
     </form>
 </div>
+</div> --}}
+
+<div class="form-group">
+  <a href="/dashboard/edit"><button class="btn btn-dark">Edit a Post</button></a>
+  <button class="btn btn-dark" type="submit">Update Your Post</button>
+  <button class="btn btn-dark" type="button">Delete Your Post</button>
 </div>
 
 <a href="/threads">Take me to the Threads!</a>
