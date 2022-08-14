@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
   }
+
+  h1 {
+    font-weight: bold;
+  }
   
   h2 {
     color: #2c2441;
@@ -17,6 +21,10 @@
     text-shadow: 1px #B3DEC1;
   }
   
+  .float-right {
+    float: right;
+  }
+
   a,
   linked {
     text-decoration: none;

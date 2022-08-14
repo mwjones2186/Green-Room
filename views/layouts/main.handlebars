@@ -12,27 +12,22 @@
   <body>
     <header>
       <h1>Hobbista</h1>
-      <h3 class="title">We'll pour in your interests, stir in some hobbies and finish it with some new leads!</h3>
     </header>
     <nav>
       <a href='/'>Home</a>
       <!-- If the user is logged in, show a logout button -->
       {{#if loggedIn}}
       <a href="/dashboard">Dashboard</a>
+      <a href="/threads" id="category-page">Threads</a>
         <button id='logout' class='btn float-right'>Logout</button>
-        <button id="category-page" class="btn">Threads</button>
+        
       {{else}}
         <!-- Otherwise, show a link to login -->
         <a href='/login'>Login</a>
       {{/if}}
     </nav>
     <main class="wrapper">
-      <aside>
-        <h2>Enjoy the threads and have fun</h2>
-      </aside>
-      <div class='gallery post'>
         {{{body}}}
-      </div>
     </main>
     <!-- If the user is logged in, load the JS script for when they logout -->
     {{#if loggedIn}}
