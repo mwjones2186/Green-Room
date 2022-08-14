@@ -12,7 +12,8 @@ const newPostFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/dashboard', '/messageboard');
+        // document.location.replace('/dashboard') 
+        document.location.replace('/messageboard')
       } else {
         alert('Failed to log in.');
       }
