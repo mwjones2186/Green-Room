@@ -9,7 +9,7 @@ router.get('/', (req,res) =>{
                 return
             }
 
-            res.render('category', {
+            res.render('category/list', {
                 dbCategoryData,
                 loggedIn:req.session.loggedIn
             })
@@ -21,7 +21,7 @@ router.get('/', (req,res) =>{
 });
 
 router.get('/:id', async (req, res) => {
-    res.render('messageboard', {
+    res.render('category/posts', {
         loggedIn: req.session.loggedIn,
         user_id: req.session.user_id,
     });
