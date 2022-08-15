@@ -18,17 +18,15 @@
       <!-- If the user is logged in, show a logout button -->
       {{#if loggedIn}}
       <a href="/dashboard">Dashboard</a>
-        <button id='logout' class='btn btn-link'>Logout</button>
         <a href="/threads" class="btn btn-link">Threads</a>
+        <button id='logout' class='btn float-right'>Logout</button>
       {{else}}
         <!-- Otherwise, show a link to login -->
         <a href='/login'>Login</a>
       {{/if}}
     </nav>
-    <main>
-      <div class='gallery'>
+    <main class="wrapper">
         {{{body}}}
-      </div>
     </main>
     <!-- If the user is logged in, load the JS script for when they logout -->
     {{#if loggedIn}}

@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-weight: bold;
+  }
+  
+  h2 {
+    color: #2c2441;
+  }
+
+  body,
+  html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2c2441;
+    background-color: #7e0101;
+    text-shadow: 1px #B3DEC1;
+  }
+  
+  .float-right {
+    float: right;
+  }
+
+  a,
+  linked {
+    text-decoration: none;
+    color: #B3DEC1;
+    font-weight: bold;
+    transition: color 0.1s;
+    border: 5px;
+    padding: 1%;
+  }
+  
+  a:hover {
+    color: #C2847A;
+  }
+  
+  button {
+    background-color: #4d3e70;
+    border: 1%;
+    padding: 0;
+    color: #B3DEC1;
+    font-weight: bold;
+    transition: background-color 0.1s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #C2847A;
+  }
+  
+  .btn {
+    text-emphasis-color: #B3DEC1;
+  }
+
+  textarea,
+  input {
+    padding: 1%;
+    border-radius: 5px;
+    border: 2px solid #C2847A;
+    background-color: #91b49d;
+  }
+  
+  textarea:focus,
+  input:focus {
+    outline: none;
+    border: 2px solid #91b49d;
+  }
+  
+  textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
+  
+  form > div {
+    margin-bottom: 2%;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-control {
+    background-color: #91b49d;
+  }
+
+  header {
+    border-bottom: 2px solid #B3DEC1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+  }
+  
+  header h1 {
+    font-size: 1em;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2% 4%;
+  }
+  
+  .delete-post-btn {
+    background-color: #d41414;
+  }
+  
+  .delete-post-btn:hover {
+    background-color: #ff643d;
+  }
+  
+  label .post {
+    margin-bottom: 2%;
+    line-height: 150%;
+  }
+  
+  .post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #7d7d7d;
+  }
+  
+  .edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+  }
+  
+  footer {
+    border-top: 2px solid #B3DEC1;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+  }
