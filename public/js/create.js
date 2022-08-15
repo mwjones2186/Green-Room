@@ -11,8 +11,7 @@ const newPostFormHandler = async (event) => {
         headers: { 'Content-Type': 'application/json' },
       });
   
-      if (response.ok) {
-        // document.location.replace('/dashboard') 
+      if (response.ok) { 
         document.location.replace('/messageboard')
       } else {
         alert('Failed to log in.');
