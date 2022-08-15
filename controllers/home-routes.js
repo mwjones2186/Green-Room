@@ -45,10 +45,9 @@ router.get('/categories', (req,res) =>{
         res.status(400).json({message:'strike a conversation!'});
         return
       }
-      const category = dbCategoryData;//dbCategoryData.get({plain:true});
 
       res.render('category', {
-        category,
+        dbCategoryData,
         loggedIn:req.session.loggedIn
       })
     })
