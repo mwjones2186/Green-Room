@@ -181,6 +181,46 @@ textarea{
   padding-bottom: 5vh;
   margin-top: 8vh;
 }
+
+/* login.handlebars css */
+.login-heading{
+  font-family: 'Staatliches', cursive;
+  color:#B3DEC1;
+  font-size: 1.5em;
+  margin-left: 1vw;
+}
+.login-container{
+  text-align: center;
+  max-width: 100vw;
+  align-items: center;
+}
+
+.login-form-card{
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.3);
+  width: 60%;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 8vh;
+}
+
+.signup-form-card{
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.3);
+  width: 60%;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 8vh;
+}
+
   /* a,
   linked {
     text-decoration: none;
