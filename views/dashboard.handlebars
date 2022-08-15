@@ -1,9 +1,10 @@
-<a href="/dashboard/create"><button class="btn btn-dark">Add New Post</button></a>
+<div class="dashboard-container">
+  <a href="/dashboard/create"><button class="btn btn-dark">Add New Post</button></a>
 
-<a href="/dashboard/edit"><button class="btn btn-dark">Edit a Post</button></a>
+  <a href="/dashboard/edit"><button class="btn btn-dark">Edit a Post</button></a>
 
-<div class="userPost-card">
-    <h2 value="{{title}}">Here are your current posts</h2>
+  <div class="user-post-card">
+    <h2 class="post-card-heading"value="{{title}}">Here are your current posts</h2>
     <form class="post">
       <input class="form-control" type="hidden" id="post-id" value='{{post_id}}'/>
 
@@ -22,8 +23,9 @@
         <button class="btn btn-dark" type="button">Delete Your Post</button>
       </div>
     </form>
-</div>
+  </div>
 
-<ul id="populate"></ul>
+  <ul id="populate"></ul>
+</div>
 
 <script src="/js/dashboard.js"></script>
