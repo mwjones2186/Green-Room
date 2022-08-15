@@ -183,9 +183,10 @@ textarea{
 }
 
 /* login.handlebars css */
-.login-heading{
+.login-heading
+.signup-heading{
+  color:#2c2441;
   font-family: 'Staatliches', cursive;
-  color:#B3DEC1;
   font-size: 1.5em;
   margin-left: 1vw;
 }
