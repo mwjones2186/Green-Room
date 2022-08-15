@@ -1,0 +1,10 @@
+{{#if posts.length}}
+<ol>
+    {{#each posts as |post|}}
+    <li>
+        <a href="#{{post.id}}">{{post.title}}</a>
+        by {{post.user.username}}
+    </li>
+    {{/each}}
+</ol>
+{{/if}}

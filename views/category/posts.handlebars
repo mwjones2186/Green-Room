@@ -1,8 +1,11 @@
-<div>
-    <h1>Welcome to the Message Board</h1>
-</div>
-<div>
-    <h2>You've selected {{category}}</h2>
-    <p>Below are all topics and posts related to </p>
-</div>
+<section>
+    <div>
+        <h1>Welcome to the Message Board</h1>
+    </div>
+    <div>
+        <h2>You've selected {{category.category_name}}</h2>
+        <p>Below are all topics and posts related to </p>
+    </div>
 
+    {{>posts category}}
+</section>
