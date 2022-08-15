@@ -59,7 +59,7 @@
   }
 
   body{
-    background-color: #7e0101;
+    background-color:#7e0101
   }
 
   .tagline-wrapper{
@@ -89,6 +89,23 @@ align-items: center;
   border: 1px solid rgba(255,255,255,0.3);
   width: 60%;
   margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 8vh;
+}
+
+.post-card-heading{
+  color:#2c2441;
+  font-family: 'Ropa Sans', sans-serif;
+}
+.form-control,
+textarea{
+  max-width: 30vw;
+  margin: auto;
+}
+.form-group label{
+  font-family: 'Staatliches', cursive;
+  font-size: 1.5rem;
 }
   /* a,
   linked {
@@ -199,4 +216,8 @@ align-items: center;
     justify-content: center;
     padding: 1%;
     font-size: 110%;
-  } */ */
+  } */ 
+
+  .btn{
+    background-color: #2c2441;
+  }
