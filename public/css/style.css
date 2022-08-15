@@ -1,20 +1,67 @@
 * {
     box-sizing: border-box;
+    top: 0;
+    margin: 0;
   }
 
-  h1 {
-    font-weight: bold;
+  header {
+    background-color: #4d3e70;
+    border-bottom: 2px solid #B3DEC1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
   }
+  
+  header h1 {
+    font-size: 1em;
+  }
+
+  .hobbista-title{
+    font-weight: bold;
+    font-family: 'Slackey', cursive;
+    font-size: 3.5em;
+  }
+
+  .nav-item{
+    max-width: 10%;
+    font-size: 1em;
+    text-decoration: none;
+    color: #B3DEC1;
+    font-family: 'Staatliches', cursive;
+  }
+
+  .nav-item:hover{
+    color:#2c2441;
+  }
+  .nav-button{
+    background: none;
+	  color: #B3DEC1;
+    font-family: 'Staatliches', cursive;
+	  border: none;
+	  padding: 0;
+	  cursor: pointer;
+	  outline: inherit;
+  }
+
+  .nav-button:hover{
+    color:#2c2441;
+  }
+
   
   h2 {
     color: #2c2441;
+
   }
 
-  body,
+  body{
+    background-color: #7e0101;
+  }
+
+  /* body,
   html {
     height: 100%;
     padding: 0;
-    margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #2c2441;
     background-color: #7e0101;
@@ -97,17 +144,7 @@
     background-color: #91b49d;
   }
 
-  header {
-    border-bottom: 2px solid #B3DEC1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1%;
-  }
-  
-  header h1 {
-    font-size: 1em;
-  }
+
   
   main {
     flex: 1;
@@ -144,4 +181,4 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
-  }
+  } */
