@@ -12,7 +12,8 @@ const postData =[
                 Sed vel lectus lacinia, fermentum magna eget, sodales dolor. 
                 Cras porttitor lacinia molestie. Nulla mauris sem, ornare pretium risus vitae, rutrum consectetur nulla. 
                 Fusce fringilla maximus fringilla.`,
-        user_id:1
+        user_id:1,
+        category_id: 1
     },
     { 
         title:'This is a Test Title',
@@ -25,7 +26,8 @@ const postData =[
                 Sed vel lectus lacinia, fermentum magna eget, sodales dolor. 
                 Cras porttitor lacinia molestie. Nulla mauris sem, ornare pretium risus vitae, rutrum consectetur nulla. 
                 Fusce fringilla maximus fringilla.`,
-        user_id:1
+        user_id:1,
+        category_id: 1
     },
     { 
         title:'This is a Test Title',
@@ -38,7 +40,8 @@ const postData =[
                 Sed vel lectus lacinia, fermentum magna eget, sodales dolor. 
                 Cras porttitor lacinia molestie. Nulla mauris sem, ornare pretium risus vitae, rutrum consectetur nulla. 
                 Fusce fringilla maximus fringilla.`,
-        user_id:4
+        user_id:4,
+        category_id: 4
     },
     { 
         title:'This is a Test Title',
@@ -51,7 +54,8 @@ const postData =[
                 Sed vel lectus lacinia, fermentum magna eget, sodales dolor. 
                 Cras porttitor lacinia molestie. Nulla mauris sem, ornare pretium risus vitae, rutrum consectetur nulla. 
                 Fusce fringilla maximus fringilla.`,
-        user_id:2
+        user_id:2,
+        category_id: 2
     },
     { 
         title:'This is a Test Title',
@@ -64,7 +68,8 @@ const postData =[
                 Sed vel lectus lacinia, fermentum magna eget, sodales dolor. 
                 Cras porttitor lacinia molestie. Nulla mauris sem, ornare pretium risus vitae, rutrum consectetur nulla. 
                 Fusce fringilla maximus fringilla.`,
-        user_id:3
+        user_id:3,
+        category_id: 3
     },
 ]
 
