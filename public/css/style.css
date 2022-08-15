@@ -1,3 +1,4 @@
+/* main and homepage css*/
 * {
     box-sizing: border-box;
     top: 0;
@@ -15,12 +16,15 @@
   
   header h1 {
     font-size: 1em;
+    cursor: pointer;
   }
 
   .hobbista-title{
     font-weight: bold;
     font-family: 'Slackey', cursive;
     font-size: 3.5em;
+    color:#7e0101;
+    text-shadow: 3px 2px #2c2441;
   }
 
   .nav-item{
@@ -58,21 +62,35 @@
     background-color: #7e0101;
   }
 
-  /* body,
-  html {
-    height: 100%;
-    padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #2c2441;
-    background-color: #7e0101;
-    text-shadow: 1px #B3DEC1;
-  }
-  
-  .float-right {
-    float: right;
+  .tagline-wrapper{
+    width: 100%;
+    text-align:left;
+    margin-top: 1vh;
   }
 
-  a,
+  .tagline{
+    font-family: 'Staatliches', cursive;
+    color:#B3DEC1;
+    font-size: 1.5em;
+    margin-left: 1vw;
+  }
+/* dashboard css*/
+
+.dashboard-container{
+text-align: center;
+max-width: 100vw;
+align-items: center;
+}
+.user-post-card{
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.3);
+  width: 60%;
+  margin: auto;
+}
+  /* a,
   linked {
     text-decoration: none;
     color: #B3DEC1;
@@ -181,4 +199,4 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
-  } */
+  } */ */
