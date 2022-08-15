@@ -1,3 +1,4 @@
+const sequelize = require('../config/connection');
 const {Category, User, Post} = require('../models');
 
 const postData =[
