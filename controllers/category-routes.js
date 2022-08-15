@@ -10,7 +10,7 @@ router.get('/', (req,res) =>{
             }
 
             res.render('category/list', {
-                dbCategoryData,
+                categories: dbCategoryData,
                 loggedIn:req.session.loggedIn
             })
         })
