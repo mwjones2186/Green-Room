@@ -7,24 +7,36 @@
     <title>Hobbista</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' href='/css/style.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Slackey&family=Staatliches&display=swap" rel="stylesheet">
+
   </head>
 
-  <body>
-    <header>
-      <h1>Hobbista</h1>
-    </header>
-    <nav>
-      <a href='/'>Home</a>
-      <!-- If the user is logged in, show a logout button -->
-      {{#if loggedIn}}
-      <a href="/dashboard">Dashboard</a>
-        <a href="/categories" class="btn btn-link">Categories</a>
-        <button id='logout' class='btn float-right'>Logout</button>
-      {{else}}
+<body>
+<div id="page-container">
+
+
+  <div id="content-wrap">
+    <header class="header">
+      <div class="hobbista-container">
+        <h1 class="hobbista-title">Hobbista</h1>
+      </div>
+      
+      <nav>
+        <a class= "nav-item" href='/'>Home</a>
+        <!-- If the user is logged in, show a logout button -->
+        {{#if loggedIn}}
+        <a class= "nav-item" href="/dashboard">Dashboard</a>
+        <a class= "nav-item" href="/categories" class="btn btn-link">Categories</a>
+        <button id='logout'class= "nav-button">Logout</button>
+        {{else}}
         <!-- Otherwise, show a link to login -->
-        <a href='/login'>Login</a>
-      {{/if}}
-    </nav>
+        <a class= "nav-item" href='/login'>Login</a>
+        {{/if}}
+      </nav>
+    </header>
+
     <main class="wrapper">
         {{{body}}}
     </main>
@@ -34,6 +46,13 @@
     {{/if}}
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
+  <div>
+
+  {{!-- <div class="footer-control">
+    <footer>&copy; 2022</footer>
+  </div> --}}
+
+</div>
+</body>
 
 </html>
