@@ -35,6 +35,12 @@ Post.hasMany(Comment, {
 
 Category.hasMany(Post, {
   foreignKey:'category_id',
+  onDelete:'CASCADE'
 });
+
+Post.belongsTo(Category, {
+  foreignKey:'category_id',
+  onDelete:'CASCADE'
+})
 
 module.exports = { User, Post, Comment, Category };

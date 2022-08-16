@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
       },
       {
         model:Category,
-        attributes:['category_id']
+        attributes:['id']
       },
     ],
   })
@@ -77,7 +77,7 @@ router.get('/:id', (req, res) => {
       },
       {
         model:Category,
-        attributes:['category_id']
+        attributes:['id']
       },
     ],
   })
