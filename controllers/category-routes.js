@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { json } = require('sequelize/types');
-const {Category, Post, User} = require('../models');
+//const {json} = require('sequelize/types');
+const {Category, Post, User, Comment} = require('../models');
 
 router.get('/', (req,res) =>{
     Category.findAll({raw: true})
@@ -29,7 +29,7 @@ router.get('/:id', async (req, res) => {
         attributes:['id','category_name'],
         include:{
             model:Post,
-            attributes:['id','title', 'body'],
+            attributes:['id','title', 'body', 'category_id'],
             include:{
                 model:User,
                 attributes:['username']
