@@ -31,4 +31,11 @@ router.get('/dashboard/create', async (req, res) => {
   });
 });
 
+router.get('/dashboard/edit', async (req, res) => {
+  res.render('edit', {
+    loggedIn: req.session.loggedIn,
+    user_id: req.session.user_id,
+  });
+});
+
 module.exports = router;
