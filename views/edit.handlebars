@@ -1,21 +1,21 @@
 <div class="login-card">
     <h2 class="page-title">Edit Your Post</h2>
-    <form class="form edit-form">
-        <input class="form-input" type="hidden" id="post-id" value='{{post_id}}'/>
+    <form class="">
+        <input class="" type="hidden" id="post-id" value='{{post_id}}'/>
       <div class="form-group">
         <label for="edit-post">Title:</label>
         <input class="form-input" type="text" id="title" value='{{title}}'/>
       </div>
       <div class="form-group">
         <label for="edit-post">Content:</label>
-        <textarea class="form-input" type="text" id="body" value= '{{content}}'></textarea>
+        <textarea class="form-control" type="text" id="body" value= '{{content}}'></textarea>
       </div>
      
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">Update Your Post</button>
-        <button class="btn btn-primary" type="button">Delete Your Post</button>
+        <button class="btn btn-dark" type="submit">Update Your Post</button>
+        <button class="btn btn-dark" type="button">Delete Your Post</button>
       </div>
     </form>
   </div>
 
-  <script src="/public/js/edit-post.js"></script>
+  <script src="../public/js/edit-post.js"></script>

@@ -1,0 +1,14 @@
+<section class="mb-container">
+    <div>
+        <h1 class="mb-heading">Welcome to the Message Board</h1>
+    </div>
+    <div>
+        <h2 class="category-name-title">You've selected {{category.category_name}}</h2>
+        <p class="category-name-subtitle">Below are all topics and posts related to {{category.category_name}}</p>
+    </div>
+
+</section>
+
+<div class="mb-post-card">
+     {{>posts category}} 
+</div>

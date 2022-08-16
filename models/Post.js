@@ -17,7 +17,7 @@ Post.init(
       allowNull: false,
     },
     body: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(2048),
       allowNull: false,
     },
     user_id: {
@@ -26,15 +26,16 @@ Post.init(
       references: {
         model: 'user',
         key: 'id',
-      },
-    // category_id: {
-    //   allowNull: true,
-    //   references: {
-    //     model: 'category',
-    //     key: 'id'
-    //   },
-    // } 
+      }
     },
+    category_id: {
+      type:DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'category',
+        key: 'id'
+      },
+    } 
   },
   {
     sequelize,

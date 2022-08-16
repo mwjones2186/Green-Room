@@ -5,7 +5,7 @@ const {Category} = require('../../models')
 
 router.get('/', (req, res) => {
     Category.findAll()
-      .then(dbCommentData => res.json(dbCommentData))
+      .then(dbCategoryData => res.json(dbCategoryData))
       .catch(err => {
         console.log(err);
         res.status(500).json(err);
@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
     Category.create({
       category_name: req.body.category_name
     })
-      .then(dbCommentData => res.json(dbCommentData))
+      .then(dbCategoryData => res.json(dbCategoryData))
       .catch(err => {
         console.log(err);
         res.status(400).json(err);
@@ -30,12 +30,12 @@ router.get('/', (req, res) => {
         id: req.params.id
       }
     })
-      .then(dbCommentData => {
-        if (!dbCommentData) {
+      .then(dbCategoryData => {
+        if (!dbCategoryData) {
           res.status(404).json({ message: 'No category found with this id!' });
           return;
         }
-        res.json(dbCommentData);
+        res.json(dbCategoryData);
       })
       .catch(err => {
         console.log(err);

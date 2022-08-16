@@ -1,7 +1,7 @@
 const editFormHandler = async (event) => {
     event.preventDefault();
   
-    const postId = document.querySelector('#post-id').value.trim();
+    const post_id = document.querySelector('#post-id').value.trim();
     const title = document.querySelector('#title').value.trim();
     const body = document.querySelector('#body').value.trim();
   
@@ -15,7 +15,7 @@ const editFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
-        alert('Failed to log in.');
+        alert('Failed to edit post!');
       }
     
   };
