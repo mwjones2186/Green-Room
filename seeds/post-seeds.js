@@ -2,7 +2,7 @@ const {Post} = require('../models');
 
 const postData =[
     { 
-        title:'This is a Test Title for Ourdoors 1',
+        title:'This is a Test Title for Outdoors 1',
         body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc nibh, tincidunt eu dapibus eu, aliquam viverra orci. 
                 Suspendisse pharetra justo eget velit fermentum, a finibus dui sagittis. Phasellus tellus justo, porta nec sagittis ut, porttitor in tellus. 
                 Proin vitae erat porta, vestibulum quam non, mollis sem. 
