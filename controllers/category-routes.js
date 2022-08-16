@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
         where:{
             id:req.params.id
         },
-        attributes:['category_name'],
+        attributes:['id','category_name'],
         include:{
             model:Post,
             attributes:['id','title', 'body'],
@@ -53,6 +53,17 @@ router.get('/:id', async (req, res) => {
         res.status(500).json(err);
     })
 });
+
+router.get('/:id/create-post', (req, res) =>{
+    if(!req.session.loggedIn){
+        res.redirect('/');
+    }
+    res.render('category/create-post', {
+      category_id:req.params.id,
+      loggedIn:req.session.loggedIn,
+      user_id:req.session.user_id
+    })
+})
 
 
 module.exports = router;

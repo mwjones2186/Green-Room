@@ -1,5 +1,4 @@
 <div class="dashboard-container">
-  <a href="/dashboard/create"><button class="btn btn-dark">Add New Post</button></a>
 
   <a href="/dashboard/edit"><button class="btn btn-dark">Edit a Post</button></a>
 
@@ -7,16 +6,6 @@
     <h2 class="post-card-heading"value="{{title}}">Here are your current posts</h2>
     <form class="post">
       <input class="form-control" type="hidden" id="post-id" value='{{post_id}}'/>
-
-      <div class="form-group">
-        <label for="edit-post">Title:</label>
-        <input class="form-control" type="text" id="outdoors" value='{{title}}'/>
-      </div>
-
-      <div class="form-group">
-        <label for="edit-post">Content:</label>
-        <textarea class="post" type="text" id="body" value= '{{content}}'></textarea>
-      </div>
      
       <div class="form-group">
         <button class="btn btn-dark" type="submit">Update Your Post</button>
