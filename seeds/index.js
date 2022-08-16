@@ -13,10 +13,10 @@ const seedAll = async () => {
 
   await seedUsers();
   console.log('\n----- USERS SEEDED -----\n');
-
+/*
   await seedComments();
   console.log('\n----- COMMENTS SEEDED -----\n');
-
+*/
   process.exit(0);
 };
 
