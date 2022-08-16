@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
         where:{
             id:req.params.id
         },
-        attributes:['category_name'],
+        attributes:['id','category_name'],
         include:{
             model:Post,
             attributes:['id','title', 'body'],
