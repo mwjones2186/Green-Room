@@ -58,7 +58,7 @@ router.get('/:id', async (req, res) => {
 router.get('/:id/posts/:post_id', (req,res) =>{
     Post.findOne({
         where:{
-            id:req.params.id
+            id:req.params.post_id
         },
         attributes:[
             'id',
@@ -88,7 +88,7 @@ router.get('/:id/posts/:post_id', (req,res) =>{
         }
         const post = dbPostData.get({plain:true});
 
-        res.render('single-post', {
+        res.render('category/single-post', {
             post,
             loggedIn:req.session.loggedIn
         })
