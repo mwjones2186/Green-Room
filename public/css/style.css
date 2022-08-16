@@ -406,7 +406,44 @@ input:focus {
   border: 2px solid var(--altgrey-color);
 }
 
-/* a,
+/* post css*/
+
+.mb-container{
+  text-align: center;
+  max-width: 100vw;
+  align-items: center;
+}
+
+.mb-heading{
+  color:#2c2441;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.5em;
+  margin-left: 1vw;
+}
+
+.category-name-title{
+  color:#2c2441;
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+.category-name-subtitle{
+  color:#91b49d;
+}
+
+.mb-post-card{
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.3);
+  width: 60%;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 8vh;
+}
+  /* a,
+>>>>>>> develop
   linked {
     text-decoration: none;
     color: var(--tertiary-color);
