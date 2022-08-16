@@ -1,16 +1,11 @@
-
-
-    <div class="messageboard-container">
-        <h1 class="messageboard-heading">Welcome to the Message Board</h1>
-  
-        <div class="search-card">
-            <h2 class="selection-text">You've selected {{category}}</h2>
-            <p>Below are all topics and posts related to </p>
-        
-        <input type="text" placeholder="Search..">
-        </div>
+<section>
+    <div>
+        <h1>Welcome to the Message Board</h1>
+    </div>
+    <div>
+        <h2>You've selected {{category.category_name}}</h2>
+        <p>Below are all topics and posts related to </p>
     </div>
 
-<ul id="populate"></ul>
-
-<script src="/js/dashboard.js"></script>
+    {{>posts category}}
+</section>
