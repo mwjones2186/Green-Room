@@ -54,5 +54,16 @@ router.get('/:id', async (req, res) => {
     })
 });
 
+router.get('/:id/create-post', (req, res) =>{
+    if(!req.session.loggedIn){
+        res.redirect('/');
+    }
+    res.render('category/create-post', {
+      category_id:req.params.id,
+      loggedIn:req.session.loggedIn,
+      user_id:req.session.user_id
+    })
+})
+
 
 module.exports = router;
