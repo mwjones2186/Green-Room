@@ -20,14 +20,14 @@ function init(){
 init()
 
 function initMap(lat, lng) {
-    // The location of Uluru
+    
     const usermap = {lat, lng};
-    // The map, centered at Uluru
+    
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 12,
       center: usermap,
     });
-    // The marker, positioned at Uluru
+   
     const marker = new google.maps.Marker({
       position: usermap,
       map: map,
