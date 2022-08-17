@@ -5,11 +5,11 @@
 
 :root {
 
-  --primary-color: #7e0101;
-  --secondary-color: #2c2441;
-  --tertiary-color: #B3DEC1;
-  --hover-color: #C2847A;
-  --alt-color: #4d3e70;
+  --primary-color: #606C38;
+  --secondary-color: #BC6C25;
+  --tertiary-color: #FEFAE0;
+  --hover-color: #DDA15E;
+  --alt-color: #283618;
   --shadow-color: rgba(0, 0, 0, 0.25);
   --altgrey-color: #91b49d;
   
@@ -422,19 +422,19 @@ input:focus {
 }
 
 .category-name-title{
-  color:#2c2441;
+  color: var(--secondary-color);
   font-family: 'Ropa Sans', sans-serif;
 }
 
 .category-name-subtitle{
-  color:#91b49d;
+  color: var(--altgrey-color);
 }
 
 .mb-post-card{
   border-radius: 8px;
   backdrop-filter: blur(20px);
   background-color: rgba(255,255,255,0.5);
-  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+  box-shadow: var(--shadow-color);
   border: 1px solid rgba(255,255,255,0.3);
   width: 60%;
   margin: auto;
@@ -442,108 +442,7 @@ input:focus {
   padding-bottom: 5vh;
   margin-top: 8vh;
 }
-  /* a,
->>>>>>> develop
-  linked {
-    text-decoration: none;
-    color: var(--tertiary-color);
-    font-weight: bold;
-    transition: color 0.1s;
-    border: 5px;
-    padding: 1%;
-  }
-  
-  a:hover {
-    color: color: var(--hover-color);;
-  }
-  
-  button {
-    background-color: var(--alt-color);
-    border: 1%;
-    padding: 0;
-    color: #B3DEC1;
-    font-weight: bold;
-    transition: background-color 0.1s;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: color: var(--hover-color);;
-  }
-  
-  .btn {
-    text-emphasis-color: var(--tertiary-color);
-  }
-
-  textarea,
-  input {
-    padding: 1%;
-    border-radius: 5px;
-    border: 2px solid color: var(--hover-color);;
-    background-color: var(--altgrey-color);;
-  }
-  
-  textarea:focus,
-  input:focus {
-    outline: none;
-    border: 2px solid var(--altgrey-color);;
-  }
-  
-  textarea {
-    min-width: 40%;
-    min-height: 100px;
-  }
-  
-  form > div {
-    margin-bottom: 2%;
-  }
-  
-  form label {
-    display: block;
-  }
-  
-  .wrapper {
-    width: 100%;
-    min-height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-
-
-  
-  main {
-    flex: 1;
-    padding: 2% 4%;
-  }
-  
-  .delete-post-btn {
-    background-color: #d41414;
-  }
-  
-  .delete-post-btn:hover {
-    background-color: #ff643d;
-  }
-  
-  label .post {
-    margin-bottom: 2%;
-    line-height: 150%;
-  }
-  
-  .post .title span {
-    font-style: italic;
-    font-size: 90%;
-    color: #7d7d7d;
-  }
-  
-  .edit-link {
-    display: block;
-    margin: -1.5% 0 2% 0;
-  }
-  
-  */
+ 
 
 /*footer*/
 #page-container {
