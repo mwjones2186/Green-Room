@@ -30,5 +30,8 @@ router.get('/dashboard/create', async (req, res) => {
     loggedIn: req.session.loggedIn,
   });
 });
+router.get('/signup', (req,res)=>{
+  res.render('/signup')
+})
 
 module.exports = router;
