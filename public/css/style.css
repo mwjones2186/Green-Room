@@ -308,7 +308,11 @@ textarea {
   margin-top: 8vh;
 }
 
-/* categories.handlebars css*/
+/* list.handlebars css*/
+
+.listbtn{
+  height: 10vh;
+}
 
 .category-list-heading {
   font-family: 'Staatliches', cursive;
