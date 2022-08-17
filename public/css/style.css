@@ -423,6 +423,20 @@ input:focus {
   outline: none;
   border: 2px solid var(--altgrey-color);
 }
+/* edit.handlebars css*/
+.edit-card{
+  text-align: center;
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background-color: var(--alt-color);
+  box-shadow: 0 1px 12px var(--shadow-color);
+  border: 1px solid var(--secondary-color);
+  width: 60%;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 8vh;
+}
 
 /* post css*/
 
