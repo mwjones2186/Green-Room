@@ -1,12 +1,27 @@
 
-const postal_code = document.getElementById('zipcode-signup').value;
+const googleMapEl = document.getElementById("googleMap")
+const zipcode=document.getElementById("zipcode").value
 
-const map = `https://maps.googleapis.com/maps/api/geocode/json?components=${postal_code}&key=AIzaSyDiGnQ61aAehxeFqd9DfJ6JZ8OOBVuruQU`
-
-fetch(map).then(function (results){
-    return;
-})
+// `https://maps.googleapis.com/maps/api/geocode/json?address=${req.session.zipcode}&key=${process.env.gMapsAPI}`
 
 
-// googleMap.setAttribute('src', `https://www.google.com/maps/embed/v1/place?key=AIzaSyDiGnQ61aAehxeFqd9DfJ6JZ8OOBVuruQU
-// &q=${formattedCity}+${state}`)
+function init(){
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${zipcode}&key=AIzaSyDiGnQ61aAehxeFqd9DfJ6JZ8OOBVuruQU`).then((data)=>{
+      return data.json()
+    }).then((res)=>{
+        console.log(res)
+    })
+}
+init()
+
+function myMap(lat, lon) {
+var mapProp= {
+  center: new google.maps.LatLng$(lat,-lon),
+  zoom:12,
+};
+var map = new google.maps.Map(googleMapEl,mapProp);
+}
+
+
+
+
