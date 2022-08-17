@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
       },
       {
         model:Category,
-        attributes:['category_id']
+        attributes:['id']
       },
     ],
   })
@@ -77,7 +77,7 @@ router.get('/:id', (req, res) => {
       },
       {
         model:Category,
-        attributes:['category_id']
+        attributes:['id']
       },
     ],
   })
@@ -99,6 +99,7 @@ router.post('/', (req, res) => {
     title: req.body.title,
     body: req.body.body,
     user_id: req.session.user_id,
+    category_id:req.body.category_id
   })
     .then((dbPostData) => res.json(dbPostData))
     .catch((err) => {

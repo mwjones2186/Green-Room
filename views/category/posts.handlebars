@@ -1,16 +1,15 @@
-
-
-    <div class="messageboard-container">
-        <h1 class="messageboard-heading">Welcome to the Message Board</h1>
-  
-        <div class="search-card">
-            <h2 class="selection-text">You've selected {{category}}</h2>
-            <p>Below are all topics and posts related to </p>
-        
-        <input type="text" placeholder="Search..">
-        </div>
+<section class="mb-container">
+    <div>
+        <h1 class="mb-heading">Welcome to the Message Board</h1>
+    </div>
+    <div>
+        <h2 class="category-name-title">You've selected {{category.category_name}}</h2>
+        <p class="category-name-subtitle">Below are all topics and posts related to {{category.category_name}}</p>
+        <a href="/categories/{{category.id}}/create-post"><button class="btn btn-dark">Add New Post</button></a>
     </div>
 
-<ul id="populate"></ul>
+</section>
 
-<script src="/js/dashboard.js"></script>
+<div class="mb-post-card">
+     {{>posts category}} 
+</div>

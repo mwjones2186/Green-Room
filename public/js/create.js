@@ -3,18 +3,18 @@ const newPostFormHandler = async (event) => {
   
     const title = document.querySelector('#title').value.trim();
     const body = document.querySelector('#body').value.trim();
-  
+    const category_id = document.querySelector('input[name="category_id"]').value;
    
       const response = await fetch('/api/posts', {
         method: 'POST',
-        body: JSON.stringify({ title, body }),
+        body: JSON.stringify({ title, body, category_id }),
         headers: { 'Content-Type': 'application/json' },
       });
   
       if (response.ok) { 
-        document.location.replace('/messageboard')
+        document.location.replace(`/categories/${category_id}`)
       } else {
-        alert('Failed to log in.');
+        alert(response.statusText);
       }
     
   };

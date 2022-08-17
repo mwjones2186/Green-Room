@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {Category} = require('../models');
+const {Category, Post, User} = require('../models');
 
 router.get('/', (req,res) =>{
     Category.findAll({raw: true})
@@ -21,11 +21,49 @@ router.get('/', (req,res) =>{
 });
 
 router.get('/:id', async (req, res) => {
-    res.render('category/posts', {
-        loggedIn: req.session.loggedIn,
-        user_id: req.session.user_id,
-    });
+    Category.findOne({
+        where:{
+            id:req.params.id
+        },
+        attributes:['id','category_name'],
+        include:{
+            model:Post,
+            attributes:['id','title', 'body'],
+            include:{
+                model:User,
+                attributes:['username']
+            }
+        }
+    })
+    .then(dbCategoryData => {
+        if(!dbCategoryData){
+            res.status(400).json({message:'Category not found!'});
+            return
+        }
+        const category = dbCategoryData.get({plain: true});
+        console.log(category.posts)
+        res.render('category/posts', {
+            category,
+            loggedIn: req.session.loggedIn,
+            user_id: req.session.user_id,
+        });
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    })
 });
+
+router.get('/:id/create-post', (req, res) =>{
+    if(!req.session.loggedIn){
+        res.redirect('/');
+    }
+    res.render('category/create-post', {
+      category_id:req.params.id,
+      loggedIn:req.session.loggedIn,
+      user_id:req.session.user_id
+    })
+})
 
 
 module.exports = router;
