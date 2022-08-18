@@ -1,10 +1,5 @@
 {{#if posts.length}}
 <ol>
-    <a href="/dashboard/create"><button class="btn btn-dark">Add New Post</button></a>
-
-    <a href="/dashboard/edit"><button class="btn btn-dark">Edit a Post</button></a>
-
-    <a href="/dashboard/delete"><button class="btn btn-dark" type="button">Delete Your Post</button></a>
     {{#each posts as |post|}}
     <li>
         <a href="/categories/{{post.category_id}}/posts/{{post.id}}">{{post.title}}</a>
