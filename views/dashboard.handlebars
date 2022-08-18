@@ -3,17 +3,16 @@
   <a href="/dashboard/edit"><button class="btn btn-dark">Edit a Post</button></a>
 
   <div class="user-post-card">
-    <h2 class="post-card-heading"value="{{title}}">Here are your current posts</h2>
-    <form class="post">
-      <input class="form-control" type="hidden" id="post-id" value='{{post_id}}'/>
-     
-      <div class="form-group">
+    <h2 class="post-card-heading" value="{{title}}">Here are your current posts</h2>
 
-      </div>
-    </form>
+    <ul id="populate"></ul>
+    {{!-- <form class="post">
+      <input class="form-control" type="hidden" id="post-id" value='{{post_id}}' />
+
+    </form> --}}
   </div>
 
-  <ul id="populate"></ul>
+
 </div>
 
 <script src="/js/dashboard.js"></script>

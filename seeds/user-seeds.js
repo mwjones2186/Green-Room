@@ -24,7 +24,7 @@ const userdata = [
     username: 'jereamy',
     email: 'test@gmail.com',
     password: 'password',
-    zipcode: '97314'
+    zipcode: '83814'
   },
 ];
 
