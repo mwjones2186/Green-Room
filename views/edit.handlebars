@@ -1,4 +1,4 @@
-<div class="login-card">
+<div class="login-card post">
     <h2 class="page-title">Edit Your Post</h2>
 
     <form class="edit-post-form">
@@ -11,15 +11,15 @@
         <label for="edit-post">Content:</label>
         <textarea class="form-control" type="text" id="body" value= '{{content}}'></textarea>
       </div>
-     
+
       <div class="form-group">
-        <button class="btn btn-dark" type="submit">Update Your Post</button>
-        <button class="btn btn-dark" type="button">Delete Your Post</button>
+        <button class="btn btn-dark" id="edit-post-form" type="submit">Update Your Post</button>
+        <button class="btn btn-dark" id="delete-post-btn" type="button">Delete Your Post</button>
       </div>
       
     </form>
   </div>
 
-  <script src="./js/edit-post.js"></script>
+  <script src="/js/edit-post.js"></script>
   <script src="/js/delete-post.js"></script>
 
