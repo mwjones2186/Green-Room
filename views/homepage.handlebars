@@ -1,5 +1,17 @@
 <section class="tagline-wrapper">
     <h2 class="tagline">Pour in your interests, stir in some hobbies and finish with new leads!</h2>
+    <input type="hidden" id="zipcode" value="{{zipcode}}">
 
 
 </section>
+<body>
+
+{{#if loggedIn}}
+
+<div id="map" style="width:100%;height:400px;"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiGnQ61aAehxeFqd9DfJ6JZ8OOBVuruQU&callback=initMap&v=weekly"
+defer></script>
+
+<script src="/js/homepageMap.js"></script>
+{{/if}}

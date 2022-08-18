@@ -10,7 +10,7 @@ router.use('/category', categoryRoutes);
 router.use('/posts', postRoutes);
 router.use('/users', userRoutes);
 
-router.use('/comment', commentRoutes)
+router.use('/comments', commentRoutes)
 
 
 module.exports = router;
