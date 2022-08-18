@@ -1,0 +1,14 @@
+<div class="category-list">
+    
+    <h3 class="category-list-heading">Select the message board you'd like to join</h3>
+    <div class="category-btn-container">
+        {{#each categories as |category|}}
+
+            <button class="listbtn btn btn-dark">
+                <a class="category-links" href='/categories/{{id}}' >{{category_name}}</a>
+            </button> 
+   
+        {{/each}}
+    </div>
+
+</div>

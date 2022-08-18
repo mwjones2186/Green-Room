@@ -1,0 +1,34 @@
+<section class="tagline-wrapper">
+    <h2 class="tagline">Pour in your interests, stir in some hobbies and finish with new friends!</h2>
+    <input type="hidden" id="zipcode" value="{{zipcode}}">
+
+
+</section>
+<body>
+
+{{#if loggedIn}}
+
+<div id="map" style="width:100%;height:400px;"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiGnQ61aAehxeFqd9DfJ6JZ8OOBVuruQU&callback=initMap&v=weekly"
+defer></script>
+
+<script src="/js/homepageMap.js"></script>
+{{/if}}
+
+<section class="home-container">
+    <div class="welcome">
+        <h2> Welcome to Hobbista</h2>
+    </div>
+        <p>Here at Hobbista we want to take away the excuses and provide solutions. We have developed an intuitive and interactive way to help prioritize what is truly important in life. Memories. 
+        </p>
+        <p>
+        Hobbista takes your interests and pops them into a threadboard style filter and provides you with countless posts that can help guide your way through your passions. We have an integrated search bar that can help you filter deeper and pinpoint your creative mind. 
+        </p>
+        <p>
+        Upon narrowing down your interests, we have an integrated map that will display those hot spots near you. Feel free to explore! Know of a place not displayed, pin it for others to enjoy. 
+        </p>
+        <p>
+        Who knows, you may find your new best friend! 
+        </p>
+</section>
