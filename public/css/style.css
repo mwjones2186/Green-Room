@@ -159,6 +159,34 @@ footer {
   font-size: 110%;
 }
 
+.home-container{
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background-color: var(--alt-color);
+  box-shadow: 0 1px 12px var(--shadow-color);
+  border: 1px solid var(--secondary-color);
+  width: 100%;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-top: 8vh;
+}
+ 
+.welcome{
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  color: var(--tertiary-color);
+  font-size: 1.5em;
+  margin-left: 1vw;
+}
+
+.home-container p {
+  font-size: 1rem;
+  font-family: 'Ropa Sans', sans-serif;
+}
+
 /* 
     box-sizing: border-box;
     top: 0;
@@ -474,7 +502,33 @@ input:focus {
   padding-bottom: 5vh;
   margin-top: 8vh;
 }
+
+/* single post*/
+
+.post{
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background-color: var(--alt-color);
+  box-shadow: 0 1px 12px var(--shadow-color);
+  border: 1px solid var(--secondary-color);
+  width: 90%;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+.title-post{
+  color: var(--tertiary-color);
+}
  
+.comment-form-container{
+  text-align: center;
+}
 
 /*footer*/
 #page-container {
