@@ -39,6 +39,18 @@ Lots of small blocks of code to make sure it functions the way it should. no for
 Please feel free to reach out with any feedback, comments, concerns or just a thumbs up to any of our linked in pages. Thank you for taking the time and utilizing our application. I hope you enjoyed it half as much as we enjoyed making it!!
 
 ## Screenshots and video functionality
+![hobbista1](https://user-images.githubusercontent.com/97492542/186188938-5f029729-fa50-421e-b4b2-9549e005de42.png)
+![hobbista2](https://user-images.githubusercontent.com/97492542/186188968-1408f2d2-cc6a-4677-ad1c-59a48fda2d70.png)
+![hobbista3](https://user-images.githubusercontent.com/97492542/186188971-52fd6c7f-0437-4bbd-b7b4-a99df415bb88.png)
+![hobista4](https://user-images.githubusercontent.com/97492542/186189006-b50f88ad-e22b-4a4a-8bef-f45436a1c5c5.png)
+![hobbista5](https://user-images.githubusercontent.com/97492542/186189021-5d47ed91-3627-4356-8644-6e24a460573f.png)
+![hobbista6](https://user-images.githubusercontent.com/97492542/186189060-23ce4dfe-a1ef-454d-87f9-25e1985334a2.png)
+![hobbista7](https://user-images.githubusercontent.com/97492542/186189064-8edab711-90d9-4acb-b7a5-3a1e55c8469c.png)
+![hobbista8](https://user-images.githubusercontent.com/97492542/186189067-5e1499f0-7e8a-42df-a4a4-d8f8d6b9aa44.png)
+![hobbista9](https://user-images.githubusercontent.com/97492542/186189068-e08e6558-be6c-46d7-8e67-f381497b7f59.png)
+![hobbista 10](https://user-images.githubusercontent.com/97492542/186189077-14599074-8209-4c6b-836d-cb5f36d54f31.png)
+
+https://drive.google.com/file/d/1G9g9pDDmJh8RWlmxAf4jtPudmK_wKaRe/view
 
 # Thank you again for viewing our project. We had an amazing time building it. Through the struggles and pitfalls. We rendered what we aimed to accomplish on a much smaller scale but optimistic on building it out further.
 
